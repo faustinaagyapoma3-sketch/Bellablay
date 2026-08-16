@@ -1,0 +1,29 @@
+# Project TODO
+
+- [x] Build standalone HTML, CSS, and JavaScript files for GitHub Pages.
+- [x] Add a newest-first general marketplace feed and category filters.
+- [x] Add a browser-local account and listing flow with a three-photo and one-video limit.
+- [x] Add listing details, comments, and owner moderation demo controls.
+- [x] Verify the static package and core browser demo flows.
+- [ ] Connect a shared production backend before enabling real public accounts or live payments.
+- [x] Prepare Supabase-backed account, listing, media, owner moderation, interested-buyer, and private chat integration files.
+- [ ] Add secure registration, login, profile management, and account-specific listing access.
+- [ ] Show each seller the people who have contacted or expressed interest in their listings.
+- [ ] Add private buyer-seller conversations tied to individual listings, with owner moderation access.
+- [ ] Configure the supplied Supabase project and grant owner moderation access to Faustinaagyapoma3@gmail.com.
+- [ ] Walk the owner through the Supabase activation screen in simple, click-by-click language.
+- [x] Correct the Supabase storage-policy owner-ID type mismatch and rerun the schema successfully.
+- [x] Redesign the marketplace with original Jiji Ghana-inspired search, categories, listing cards, and buyer-seller navigation patterns.
+- [ ] Publish a temporary browser preview for owner testing before GitHub Pages release.
+- [x] Add optional seller phone and WhatsApp numbers to listings, with a one-tap WhatsApp contact link.
+- [ ] Run the contact-field migration in Supabase before publishing listings with phone or WhatsApp details.
+- [ ] Require at least one photo before a listing can be published.
+- [ ] Restrict comments and reviews to other customers while allowing sellers to reply on their own listings.
+- [x] Localize the marketplace for Ghana with GHS pricing, Ghana locations, and local buying-and-selling language.
+- [ ] Add pending, approved, and declined listing states with owner-only approval controls.
+- [ ] Show each seller the approval status of every listing in their account dashboard.
+- [ ] Send the owner a Telegram notification when a new listing is submitted for approval.
+- [x] Increase marketplace text sizes, label sizes, button text, and reading contrast across all screens.
+- [x] Redesign the mobile marketplace search, category tiles, and listings from the supplied visual references while keeping BellaBlay original.
+- [x] Replace category symbols with cohesive professional icons and polish the complete marketplace visual system.
+- [x] Simplify returning-user access to Gmail and password only, with public name collected only at registration.

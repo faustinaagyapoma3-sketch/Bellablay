@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BellaBlay Market is a Ghana-first community marketplace for buying, selling, and messaging safely." />
+    <title>BellaBlay Market — Ghana's marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <link rel="stylesheet" href="discussion.css" />
+    <link rel="stylesheet" href="professional.css" />
+  </head>
+  <body>
+    <div class="notice-bar" id="site-notice">BellaBlay Market · Buy and sell safely across Ghana</div>
+    <header class="app-header">
+      <a class="brand" href="#top" aria-label="BellaBlay Market home"><span class="brand-mark">B</span><span><b>BellaBlay</b><em>Market Ghana</em></span></a>
+      <nav class="desktop-nav"><a href="#browse">Browse ads</a><a href="#how">How it works</a><a href="#rules">Safety</a></nav>
+      <div class="header-actions"><button class="account-link" id="dashboard-button" hidden>My account</button><button class="account-link" id="account-button">Sign in</button><button class="post-button" id="open-post">＋ Post free ad</button></div>
+    </header>
+
+    <main id="top">
+      <section class="search-hero">
+        <div class="search-hero-inner">
+          <p class="ghana-label">Ghana’s local marketplace</p>
+          <h1>Find what you need.<br /><span>Sell what you do not.</span></h1>
+          <form class="market-search" id="search-form">
+            <select id="search-category" aria-label="Choose category">
+              <option value="All">All categories</option><option>Mobile Phones & Tablets</option><option>Fashion</option><option>Electronics</option><option>Property</option><option>Vehicles</option><option>Home, Furniture & Appliances</option><option>Beauty & Personal Care</option><option>Services</option><option>Repair & Construction</option><option>Commercial Equipment</option><option>Leisure & Activities</option><option>Babies & Kids</option><option>Food, Agriculture & Farming</option><option>Animals & Pets</option><option>Jobs</option><option>Seeking Work - CVs</option><option>Other</option>
+            </select>
+            <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="What are you looking for?" aria-label="Search listings" /></label>
+            <button type="submit">Search</button>
+            <label class="location-search"><span>⌖</span><input id="location-filter" type="search" placeholder="All Ghana regions and towns" aria-label="Filter by location" /></label>
+            <button class="inline-post" type="button" id="hero-post">Post free ad</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <div class="section-title"><div><p class="eyebrow">Explore BellaBlay</p><h2>Choose a category</h2></div><button id="rail-post" class="desktop-sell-link">Sell something <span>→</span></button></div>
+        <div class="category-tabs" id="category-filters" aria-label="Popular categories"><button class="active" data-category="All">All ads</button><button data-category="Mobile Phones & Tablets">Mobile Phones</button><button data-category="Fashion">Clothing</button><button data-category="Vehicles">Vehicles</button><button data-category="Property">Property</button></div>
+        <div class="category-tile-grid" id="category-card-grid">
+          <button data-category="All" class="category-tile post-tile"><span class="category-icon"><svg><use href="#icon-plus"></use></svg></span><b>Post ad</b></button>
+          <button data-category="All" class="category-tile"><span class="category-icon"><svg><use href="#icon-trend"></use></svg></span><b>Trending</b></button>
+          <button data-category="Vehicles" class="category-tile"><span class="category-icon"><svg><use href="#icon-car"></use></svg></span><b>Vehicles</b></button>
+          <button data-category="Property" class="category-tile"><span class="category-icon"><svg><use href="#icon-home"></use></svg></span><b>Property</b></button>
+          <button data-category="Mobile Phones & Tablets" class="category-tile"><span class="category-icon"><svg><use href="#icon-phone"></use></svg></span><b>Phones & tablets</b></button>
+          <button data-category="Electronics" class="category-tile"><span class="category-icon"><svg><use href="#icon-laptop"></use></svg></span><b>Electronics</b></button>
+          <button data-category="Home, Furniture & Appliances" class="category-tile"><span class="category-icon"><svg><use href="#icon-chair"></use></svg></span><b>Home & furniture</b></button>
+          <button data-category="Fashion" class="category-tile"><span class="category-icon"><svg><use href="#icon-hanger"></use></svg></span><b>Fashion</b></button>
+          <button data-category="Beauty & Personal Care" class="category-tile"><span class="category-icon"><svg><use href="#icon-spark"></use></svg></span><b>Beauty & care</b></button>
+          <button data-category="Services" class="category-tile"><span class="category-icon"><svg><use href="#icon-tools"></use></svg></span><b>Services</b></button>
+          <button data-category="Repair & Construction" class="category-tile"><span class="category-icon"><svg><use href="#icon-helmet"></use></svg></span><b>Repair & build</b></button>
+          <button data-category="Commercial Equipment" class="category-tile"><span class="category-icon"><svg><use href="#icon-briefcase"></use></svg></span><b>Equipment</b></button>
+          <button data-category="Leisure & Activities" class="category-tile"><span class="category-icon"><svg><use href="#icon-ball"></use></svg></span><b>Leisure</b></button>
+          <button data-category="Babies & Kids" class="category-tile"><span class="category-icon"><svg><use href="#icon-toy"></use></svg></span><b>Babies & kids</b></button>
+          <button data-category="Food, Agriculture & Farming" class="category-tile"><span class="category-icon"><svg><use href="#icon-leaf"></use></svg></span><b>Food & farming</b></button>
+          <button data-category="Animals & Pets" class="category-tile"><span class="category-icon"><svg><use href="#icon-paw"></use></svg></span><b>Animals & pets</b></button>
+          <button data-category="Jobs" class="category-tile"><span class="category-icon"><svg><use href="#icon-case"></use></svg></span><b>Jobs</b></button>
+          <button data-category="Seeking Work - CVs" class="category-tile"><span class="category-icon"><svg><use href="#icon-file"></use></svg></span><b>Seeking work</b></button>
+        </div>
+      </section>
+
+      <section class="listing-section" id="browse">
+        <div class="list-heading"><div><p class="eyebrow">Popular right now</p><h2>Trending ads</h2><p id="feed-count">Loading listings…</p></div><button class="owner-switch" id="owner-toggle" hidden>Owner moderation</button></div>
+        <div class="listing-grid" id="listing-feed" aria-live="polite"></div>
+      </section>
+
+      <section id="how" class="simple-steps"><article><span>1</span><div><h3>Search or browse</h3><p>Find active ads by category, keyword, and Ghana location.</p></div></article><article><span>2</span><div><h3>Check the item</h3><p>See photos, price, contact details, and customer comments.</p></div></article><article><span>3</span><div><h3>Chat safely</h3><p>Ask questions privately before you meet or pay.</p></div></article></section>
+      <section id="rules" class="safety-callout"><span>⚠</span><div><h2>Stay safe on BellaBlay</h2><p>Inspect an item before paying and never send money in advance to someone you do not know.</p></div></section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark">B</span><span><b>BellaBlay</b><em>Market Ghana</em></span></a><p>Buy, sell, discover — simply.</p><span>© 2026 BellaBlay Market</span></footer>
+    <svg class="icon-sprite" aria-hidden="true"><symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="icon-trend" viewBox="0 0 24 24"><path d="m4 16 6-6 4 4 6-7M15 7h5v5"/></symbol><symbol id="icon-car" viewBox="0 0 24 24"><path d="m3 15 2-6h14l2 6v4H3v-4Z"/><path d="M7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM17 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></symbol><symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10H3V11Z"/><path d="M9 21v-6h6v6"/></symbol><symbol id="icon-phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></symbol><symbol id="icon-laptop" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="11" rx="1"/><path d="M3 18h18l-2 2H5l-2-2Z"/></symbol><symbol id="icon-chair" viewBox="0 0 24 24"><path d="M6 12V6h8v8H6v-2Z"/><path d="M14 10h3a2 2 0 0 1 2 2v4h-5M6 14v6M17 16v4"/></symbol><symbol id="icon-hanger" viewBox="0 0 24 24"><path d="M12 4a2 2 0 0 1 2 2c0 2-2 2-2 4"/><path d="m4 19 8-7 8 7H4Z"/></symbol><symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Z"/><path d="m19 15 .7 2.3L22 18l-2.3.7L19 21l-.7-2.3L16 18l2.3-.7L19 15Z"/></symbol><symbol id="icon-tools" viewBox="0 0 24 24"><path d="m14 6 4-4 2 2-4 4M4 20l9-9 3 3-9 9H4v-3Z"/><path d="m5 5 4 4"/></symbol><symbol id="icon-helmet" viewBox="0 0 24 24"><path d="M4 15a8 8 0 0 1 16 0H4Z"/><path d="M12 7v8M3 17h18"/></symbol><symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 12h18M10 12v2h4v-2"/></symbol><symbol id="icon-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m7 6 4 3 4-3M11 9l-2 6 3 3 3-3-2-6"/></symbol><symbol id="icon-toy" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M6 13h12v7H6z"/><path d="M10 13v7M14 13v7"/></symbol><symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4C10 4 5 9 5 16c0 2 1 4 3 4 7 0 12-5 12-16Z"/><path d="M4 21c4-5 8-8 13-11"/></symbol><symbol id="icon-paw" viewBox="0 0 24 24"><circle cx="6" cy="9" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="18" cy="9" r="2"/><path d="M7 18c0-4 2-6 5-6s5 2 5 6c0 2-2 3-5 3s-5-1-5-3Z"/></symbol><symbol id="icon-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 12h18"/></symbol><symbol id="icon-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol></svg>
+
+    <nav class="mobile-dock" aria-label="Mobile navigation"><a href="#top"><span>⌂</span>Home</a><a href="#browse"><span>♡</span>Saved</a><button id="mobile-post"><span>＋</span>Sell</button><button id="mobile-dashboard"><span>▤</span>Messages</button><button id="mobile-profile"><span>◉</span>Profile</button></nav>
+
+    <aside class="owner-panel" id="owner-panel" hidden><div class="owner-head"><div><span class="eyebrow">BellaBlay owner</span><h2>Moderation queue</h2></div><button class="round-button" id="close-owner" aria-label="Close owner panel">×</button></div><p class="owner-note">Approve pending listings only when the details and photo look accurate.</p><div id="owner-list"></div></aside>
+
+    <div class="modal" id="account-modal" hidden><button class="backdrop" data-close="account-modal" aria-label="Close account window"></button><section class="dialog"><button class="round-button close-modal" data-close="account-modal" aria-label="Close">×</button><span class="eyebrow">BellaBlay account</span><h2 id="auth-title">Sign in</h2><p id="auth-copy">Use your Gmail address and password to continue.</p><form id="account-form"><label id="name-field">Public name<input name="name" required maxlength="40" placeholder="e.g. Ama’s Finds" /></label><label>Gmail address<input name="email" required type="email" autocomplete="email" placeholder="name@gmail.com" /></label><label>Password<input id="password-input" name="password" required type="password" minlength="8" autocomplete="current-password" placeholder="Your password" /></label><button class="button dark full" id="auth-submit" type="submit">Sign in <span>→</span></button></form><button class="auth-toggle" id="auth-toggle" type="button">New to BellaBlay? Create account</button><p class="form-message" id="auth-message" aria-live="polite"></p></section></div>
+
+    <div class="modal" id="listing-modal" hidden><button class="backdrop" data-close="listing-modal" aria-label="Close listing form"></button><section class="dialog wide post-dialog"><button class="round-button close-modal" data-close="listing-modal" aria-label="Close">×</button><div class="post-dialog-head"><span class="eyebrow">Post an item</span><h2>Create your ad</h2><p>The first photo becomes your title picture. At least one photo is required.</p></div><form id="listing-form"><label>Title*<input name="title" required maxlength="80" placeholder="What are you selling?" /></label><label>Category*<select name="category" required><option>Mobile Phones & Tablets</option><option>Fashion</option><option>Electronics</option><option>Property</option><option>Vehicles</option><option>Home, Furniture & Appliances</option><option>Beauty & Personal Care</option><option>Services</option><option>Repair & Construction</option><option>Commercial Equipment</option><option>Leisure & Activities</option><option>Babies & Kids</option><option>Food, Agriculture & Farming</option><option>Animals & Pets</option><option>Jobs</option><option>Seeking Work - CVs</option><option>Other</option></select></label><div class="media-inputs"><label class="upload-box required-upload"><b>Add photos <span>(1 to 3 required)</span></b><input id="photos-input" type="file" accept="image/jpeg,image/png,image/webp" multiple required /><small>JPG, PNG, or WEBP. The first photo is the main image.</small></label><label class="upload-box"><b>Add video <span>(optional)</span></b><input id="video-input" type="file" accept="video/mp4,video/webm" /><small>One video, up to 25 MB.</small></label></div><div class="media-preview" id="media-preview"></div><label>Location in Ghana*<input name="location" list="ghana-locations" required maxlength="50" placeholder="e.g. Accra, Greater Accra" /></label><div class="form-grid"><label>Price (GHS)*<input name="price" required inputmode="decimal" maxlength="30" placeholder="e.g. 1200" /></label><label>Phone number <span>(optional)</span><input name="phone" inputmode="tel" maxlength="25" placeholder="e.g. 024 123 4567" /></label></div><label>WhatsApp number <span>(optional)</span><input name="whatsapp" inputmode="tel" maxlength="25" placeholder="e.g. 024 123 4567" /></label><label>Item description*<textarea name="description" required maxlength="280" placeholder="Describe your item clearly."></textarea></label><label>Specifications*<textarea name="specifications" required maxlength="280" placeholder="Condition, brand, size, model, colour, and useful facts."></textarea></label><button class="button dark full" type="submit">Submit for approval <span>→</span></button><small class="posting-note">By submitting, you agree to post accurate details and not list prohibited items. Your listing goes online after BellaBlay approval.</small><p class="form-message" id="listing-message" aria-live="polite"></p></form></section></div>
+    <datalist id="ghana-locations"><option value="Accra, Greater Accra"></option><option value="Kumasi, Ashanti"></option><option value="Tema, Greater Accra"></option><option value="Takoradi, Western"></option><option value="Cape Coast, Central"></option><option value="Tamale, Northern"></option><option value="Koforidua, Eastern"></option><option value="Ho, Volta"></option><option value="Sunyani, Bono"></option><option value="Wa, Upper West"></option><option value="Bolgatanga, Upper East"></option></datalist>
+
+    <div class="modal" id="detail-modal" hidden><button class="backdrop" data-close="detail-modal" aria-label="Close listing details"></button><section class="dialog detail-dialog"><button class="round-button close-modal" data-close="detail-modal" aria-label="Close">×</button><div id="detail-content"></div></section></div>
+    <div class="modal" id="dashboard-modal" hidden><button class="backdrop" data-close="dashboard-modal" aria-label="Close account dashboard"></button><section class="dialog wide dashboard-dialog"><button class="round-button close-modal" data-close="dashboard-modal" aria-label="Close">×</button><span class="eyebrow">My BellaBlay account</span><h2>Your marketplace activity</h2><div class="account-alert"><b>Alerts</b><span>Your listing status changes will appear here after owner review.</span></div><div class="dashboard-grid"><section><h3>My adverts</h3><div id="my-listings"></div></section><section><h3>Interested buyers</h3><p class="dashboard-note">Each buyer message appears here.</p><div id="interest-list"></div></section></div><button class="outline-button" id="sign-out" type="button">Sign out</button></section></div>
+    <div class="modal" id="chat-modal" hidden><button class="backdrop" data-close="chat-modal" aria-label="Close private conversation"></button><section class="dialog chat-dialog"><button class="round-button close-modal" data-close="chat-modal" aria-label="Close">×</button><span class="eyebrow">Private seller chat</span><h2 id="chat-title">Message seller</h2><p id="chat-participants">Only the buyer, seller, and BellaBlay owner can access this conversation.</p><div class="chat-safety">📣 Do not pay in advance before seeing the item.</div><div class="chat-messages" id="chat-messages"></div><div class="chat-quick-prompts"><button data-chat-prompt="Is this item still available?">Is it available?</button><button data-chat-prompt="What is your last price?">Last price</button><button data-chat-prompt="Where are you located?">Location</button></div><form class="chat-form" id="chat-form"><textarea name="message" required maxlength="1000" placeholder="Type a message"></textarea><button class="button dark" type="submit">Send <span>→</span></button></form><p class="form-message" id="chat-message" aria-live="polite"></p></section></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
